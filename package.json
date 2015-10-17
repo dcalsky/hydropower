@@ -1,0 +1,17 @@
+{
+  "name": "hydropower",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hydropower"
+  ],
+  "author": "dcalsky",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^1.12.2"
+  }
+}
