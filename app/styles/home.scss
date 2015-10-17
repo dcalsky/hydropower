@@ -1,0 +1,18 @@
+.home {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: -webkit-gradient(radial,center center,0,center center,100%,color-stop(0%,#353644),color-stop(100%,#202029));
+  background: -webkit-radial-gradient(center,ellipse cover,#353644 0,#202029 100%);
+  background: radial-gradient(ellipse at center,#353644 0,#202029 100%);
+  .wrapper {
+    width: 330px;
+    min-height: 440px;
+    position: absolute;
+    margin-top: -220px;
+    margin-left: -175px;
+    top: 45%;
+    left: 50%;
+  }
+}

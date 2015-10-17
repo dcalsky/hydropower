@@ -7,6 +7,7 @@ import {createHashHistory} from 'history';
 
 import Layout from "./components/layout.jsx";
 import Home from "./pages/home.jsx";
+import Console from "./pages/console.jsx";
 
 /* create history for Router */
 const history = new createHashHistory();
@@ -17,13 +18,14 @@ const routes = (
         <Route path="/" component={Layout}>
         <IndexRoute component={Home} />
         <Route path="home" component={Home} />
+        <Route path="console" conponent={Console} />
         </Route>
     </Router>
 );
 
 /* export a function for app.js to run whole the app. */
 export function start(){
-    let rootInstance = React.render(routes , document.getElementById('app'));
+    let rootInstance = React.render(routes , document.body);
     if (module.hot) {
         require('react-hot-loader/Injection').RootInstanceProvider.injectProvider({
             getRootInstances: function () {
