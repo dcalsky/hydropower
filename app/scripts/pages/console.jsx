@@ -33,7 +33,6 @@ const Console = React.createClass({
                     <Navbar name={this.state.name}/>
                     <LeftNav handleTransition={this.handleTransition}/>
                     <Portal renderId={this.state.renderId}/>
-                    <Footer />
             </div>
         );
     }

@@ -1,11 +1,12 @@
 import React from "react";
+import Highcharts from "react-highcharts";
 import "../../styles/left-nav.scss";
 
 const Chart = React.createClass({
     render(){
         return(
             <div className="chart">
-                {this.props.data.name}
+                <Highcharts config={this.props.data}></Highcharts>
             </div>
         );
     }
