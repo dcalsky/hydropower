@@ -16,9 +16,9 @@ const history = new createHashHistory();
 const routes = (
     <Router history={history}>
         <Route path="/" component={Layout}>
-        <IndexRoute component={Home} />
-        <Route path="home" component={Home} />
-        <Route path="console" conponent={Console} />
+            <IndexRoute component={Home} />
+            <Route path="home" component={Home} />
+            <Route path="console" component={Console} />
         </Route>
     </Router>
 );

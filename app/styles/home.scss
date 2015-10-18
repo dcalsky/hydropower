@@ -14,5 +14,32 @@
     margin-left: -175px;
     top: 45%;
     left: 50%;
+    .title {
+      font-size: 3em;
+      font-weight: 500;
+      color: #fff6de;
+      padding: 16px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    .form {
+      position: relative;
+      padding: 30px 10px;
+      background: #fff;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      .form-group {
+        overflow: hidden;
+        padding: 10px;
+        input {
+          width: 266px;
+          font-size: 1.2em;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+
   }
 }
