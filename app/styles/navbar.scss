@@ -1,7 +1,7 @@
 .navbar {
   -webkit-box-shadow: 0 -1px 8px 1px #bbb;
-  -moz-box-shadow: 0 -1px 8px 1px #bbb;
-  box-shadow: 0 -1px 8px 1px #bbb;
+  -moz-box-shadow: 0 -1px 8px 2px #bbb;
+  box-shadow: 0 -1px 8px 2px #bbb;
   min-height: 48px;
   width: 100%;
   position: absolute;
@@ -9,13 +9,13 @@
   left: 0;
   -webkit-user-select: none;
   .logo {
-    position: absolute;
     left: 0;
     top: 0;
     height: 48px;
     width: 200px;
     background: #1967D2;
     color: #fff6de;
+    float: left;
     font-size: 2em;
     font-weight: 600;
     line-height: 48px;

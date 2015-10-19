@@ -8,6 +8,9 @@ import {createHashHistory} from 'history';
 import Layout from "./components/layout.jsx";
 import Home from "./pages/home.jsx";
 import Console from "./pages/console.jsx";
+import Setting from "./pages/setting.jsx";
+import Intro from "./pages/intro.jsx";
+import Order from "./pages/order.jsx";
 
 /* create history for Router */
 const history = new createHashHistory();
@@ -19,6 +22,9 @@ const routes = (
             <IndexRoute component={Home} />
             <Route path="home" component={Home} />
             <Route path="console" component={Console} />
+            <Route path="setting" component={Setting} />
+            <Route path="intro" component={Intro} />
+            <Route path="order" component={Order} />
         </Route>
     </Router>
 );

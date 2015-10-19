@@ -5,7 +5,7 @@ var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 module.exports = {
 	entry: {
 		app: ['webpack/hot/dev-server', path.resolve(__dirname, 'app/scripts/main.js')],
-		vendors: ['react', 'react-router'],
+		vendors: ['react', 'react-router', 'classname', 'react-highcharts']
 	},
 	output: {
 		path: path.resolve(__dirname, 'build'),
@@ -18,13 +18,13 @@ module.exports = {
 			loaders: ['react-hot', 'babel-loader']
 		},{
 			test: /\.css$/,
-			loader: 'style!css',
+			loader: 'style!css'
 		},{
 			test: /\.scss$/,
 			loader: 'style!css!sass'
 		},{
 			test: /\.(woff|ttf)/,
-			loader: 'url?limit=100000',
+			loader: 'url?limit=100000'
 		}]
 	},
 	resolve: {

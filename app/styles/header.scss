@@ -1,0 +1,26 @@
+.header {
+  position: relative;
+  height: 48px;
+  padding: 10px 20px;
+  margin: 0;
+  background: #22222c;
+  .logo {
+    background: #22222c;
+    color: #fff;
+  }
+  .items {
+    padding-right: 20px;
+    .item {
+      border: 0 none;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -o-transition: none;
+      color: #fff;
+      font-size: 1.2em;
+      font-weight: 500;
+      &:hover {
+        background: #22222c;
+      }
+    }
+  }
+}

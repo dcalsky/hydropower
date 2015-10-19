@@ -19,7 +19,24 @@ const Console = React.createClass({
 
         /* simple account */
         this.setState({
-            name: "周以恒"
+            name: "周以恒",
+            items: [
+                {
+                    name: "配置管理",
+                    icon: "fa fa-cog",
+                    route: "/setting"
+                },
+                {
+                    name: "工单",
+                    icon: "fa fa-suitcase",
+                    route: "/order"
+                },
+                {
+                    name: "帮助",
+                    icon: "fa fa-question-circle",
+                    route: "/intro"
+                }
+            ]
         });
     },
     handleTransition(renderId){
@@ -30,8 +47,8 @@ const Console = React.createClass({
     render(){
         return(
             <div className="console">
-                    <Navbar name={this.state.name}/>
-                    <LeftNav handleTransition={this.handleTransition}/>
+                    <Navbar name={this.state.name} history={this.props.history} items={this.state.items} logo="HYDROPOWER" />
+                    <LeftNav handleTransition={this.handleTransition} />
                     <Portal renderId={this.state.renderId}/>
             </div>
         );
