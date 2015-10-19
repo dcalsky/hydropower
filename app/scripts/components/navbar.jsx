@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/navbar.scss";
+import "../../styles/console/navbar.scss";
 import "../../styles/header.scss";
 import cx from "classname";
 

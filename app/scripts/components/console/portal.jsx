@@ -1,6 +1,6 @@
 import React from "react";
-import "../../styles/portal.scss";
-import Loader from "./loader.jsx";
+import "../../../styles/console/portal.scss";
+import Loader from "../loader.jsx";
 import Chart from "./chart.jsx";
 import Footer from "./footer.jsx";
 

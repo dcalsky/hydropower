@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/left-nav.scss";
+import "../../../styles/console/left-nav.scss";
 import cx from "classname";
 
 const LeftNavItem = React.createClass({

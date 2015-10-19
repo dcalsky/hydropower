@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/left-nav.scss";
+import "../../styles/console/left-nav.scss";
 
 const Loader = React.createClass({
     render(){

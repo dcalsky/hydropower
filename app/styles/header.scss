@@ -1,16 +1,16 @@
 .header {
   position: relative;
-  height: 48px;
-  padding: 10px 20px;
+  height: 68px;
   margin: 0;
   background: #22222c;
   .logo {
-    background: #22222c;
-    color: #fff;
+    padding: 10px 0;
+    background: #1967d2;
+    color: #fff6de;
   }
   .items {
-    padding-right: 20px;
     .item {
+      padding: 10px 20px;
       border: 0 none;
       -webkit-transition: none;
       -moz-transition: none;
@@ -19,7 +19,7 @@
       font-size: 1.2em;
       font-weight: 500;
       &:hover {
-        background: #22222c;
+        background: #333;
       }
     }
   }

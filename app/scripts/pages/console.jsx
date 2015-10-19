@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../components/navbar.jsx";
-import Footer from "../components/footer.jsx";
-import LeftNav from "../components/left-nav.jsx";
-import Portal from "../components/portal.jsx";
+import Footer from "../components/console/footer.jsx";
+import LeftNav from "../components/console/left-nav.jsx";
+import Portal from "../components/console/portal.jsx";
 
 const Console = React.createClass({
     getInitialState(){

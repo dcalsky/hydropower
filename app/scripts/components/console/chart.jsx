@@ -1,6 +1,6 @@
 import React from "react";
 import Highcharts from "react-highcharts";
-import "../../styles/left-nav.scss";
+import "../../../styles/console/left-nav.scss";
 
 const Chart = React.createClass({
     render(){
