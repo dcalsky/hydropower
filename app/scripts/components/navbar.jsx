@@ -8,9 +8,10 @@ const Navbar = React.createClass({
         this.props.history.pushState(null, route);
     },
     render(){
+        console.log(this.props)
         let NameItem = this.props.name ? <li className="item"><span className="name">您好,{this.props.name}</span></li> : null ;
         return(
-            <div className={cx("navbar", this.props.className)} style={this.props.style}>
+            <div className={cx("navbar", this.props.className)}>
                 <div className="logo">
                     {this.props.logo}
                 </div>
@@ -19,7 +20,7 @@ const Navbar = React.createClass({
                     {
                         this.props.items.map((item)=>{
                             return(
-                                <li className="item" onClick={this.handleTransition.bind(this, item.route)}>
+                                <li className={cx("item", {active: this.props.history.isActive("")})} onClick={this.handleTransition.bind(this, item.route)}>
                                     <i className={item.icon}></i>
                                     {item.name}
                                 </li>

@@ -1,32 +1,21 @@
 import React from "react";
-import Navbar from "../components/navbar.jsx";
+import "../../styles/setting/setting.scss";
+import Container from "../components/container.jsx";
 import SubNav from "../components/sub-nav.jsx";
 
 const Setting = React.createClass({
-
+    getInitialState(){
+        return{
+            active: null
+        };
+    },
     componentWillMount(){
         /* load config */
         //TODO
         /* simple config */
         this.setState({
-            name: "周以恒",
-            items: [
-                {
-                    name: "控制台",
-                    icon: "fa fa-th",
-                    route: "/console"
-                },
-                {
-                    name: "工单",
-                    icon: "fa fa-suitcase",
-                    route: "/order"
-                },
-                {
-                    name: "帮助",
-                    icon: "fa fa-question-circle",
-                    route: "/intro"
-                }
-            ],
+            title: "配置管理",
+            intro: "基础、站点、安全设置等",
             options: [
                 {
                     name: "基本信息",
@@ -40,17 +29,27 @@ const Setting = React.createClass({
                     name: "安全与通讯",
                     route: "/safety"
                 }
-            ],
-            title: "配置管理",
-            intro: "个人设置等"
+            ]
         });
     },
+    handleTransition(route){
+        this.setState({
+            active: route
+        });
+        this.props.history.pushState(null, "/setting" + route);
+    },
     render(){
+        console.log(this.props)
         return(
-            <div>
-             <Navbar className="header" name={this.state.name} history={this.props.history} items={this.state.items} logo="HYDROPOWER" />
-             <SubNav title={this.state.title} intro={this.state.intro} options={this.state.options}/>
-            </div>
+            <Container history={this.props.history} route={this.props.route}>
+             <SubNav
+                 title={this.state.title}
+                 intro={this.state.intro}
+                 options={this.state.options}
+                 handleTransition={this.handleTransition}
+                 active={this.state.active} />
+                {this.props.children}
+            </Container>
         );
     }
 });

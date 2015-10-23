@@ -1,9 +1,10 @@
 import React from "react";
+import cx from "classname";
 import "../../styles/sub-nav.scss";
 
 const SubNav = React.createClass({
-    handleSubNavChange(){
-
+    handleTransition(route){
+        this.props.handleTransition(route)
     },
     render(){
         return(
@@ -16,7 +17,7 @@ const SubNav = React.createClass({
                 {
                     this.props.options.map((option)=>{
                         return(
-                            <li className="option" >{option.name}</li>
+                            <li className={cx("option", {active: this.props.active == option.route})} onClick={this.handleTransition.bind(this, option.route)}>{option.name}</li>
                         );
                     })
                 }

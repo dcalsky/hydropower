@@ -4,8 +4,9 @@
   padding: 30px 10px 0 50px;
   background: #333;
   height: 140px;
-  .text {
-    margin-top: 10px;
+  -webkit-user-select: none;
+    .text {
+      margin-top: 10px;
     .title {
       font-size: 2em;
       font-weight: 700;
@@ -35,7 +36,7 @@
       }
     }
     .active {
-      background: #fff6de;
+      background: #0D47A1;
     }
   }
 }

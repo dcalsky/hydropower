@@ -9,6 +9,9 @@ import Layout from "./components/layout.jsx";
 import Home from "./pages/home.jsx";
 import Console from "./pages/console.jsx";
 import Setting from "./pages/setting.jsx";
+import Base from "./components/setting/base.jsx";
+import Safety from "./components/setting/safety.jsx";
+import Station from "./components/setting/station.jsx";
 import Intro from "./pages/intro.jsx";
 import Order from "./pages/order.jsx";
 
@@ -22,7 +25,12 @@ const routes = (
             <IndexRoute component={Home} />
             <Route path="home" component={Home} />
             <Route path="console" component={Console} />
-            <Route path="setting" component={Setting} />
+            <Route path="setting" component={Setting}>
+                <Route path="safety" component={Safety} />
+                <Route path="base" component={Base} />
+                <Route path="station" component={Station} />
+                <IndexRoute component={Base} />
+            </Route>
             <Route path="intro" component={Intro} />
             <Route path="order" component={Order} />
         </Route>

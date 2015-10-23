@@ -1,0 +1,28 @@
+.form {
+  position: relative;
+  padding: 30px 10px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  .label {
+    float: left;
+    height: 41px;
+    width: 70px;
+    line-height: 41px;
+    margin-right: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: left;
+  }
+  .form-group {
+    overflow: hidden;
+    padding: 10px;
+    input {
+      width: 266px;
+      font-size: 1.2em;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}

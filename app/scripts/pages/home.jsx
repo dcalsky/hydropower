@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/home.scss";
+import "../../styles/form.scss";
 
 const Home = React.createClass({
     getInitialState(){

@@ -5,7 +5,8 @@
 }
 html {
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {
@@ -55,4 +56,8 @@ button {
   .console {
     height: 100%;
   }
+}
+
+.console {
+  overflow: hidden;
 }
