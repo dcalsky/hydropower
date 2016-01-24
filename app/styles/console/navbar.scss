@@ -1,0 +1,48 @@
+.navbar {
+  -webkit-box-shadow: 0 -1px 8px 1px #bbb;
+  -moz-box-shadow: 0 -1px 8px 2px #bbb;
+  box-shadow: 0 -1px 8px 2px #bbb;
+  min-height: 48px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-user-select: none;
+  .logo {
+    left: 0;
+    top: 0;
+    height: 48px;
+    width: 200px;
+    background: #1967D2;
+    color: #fff6de;
+    float: left;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+  }
+  .items {
+    float: right;
+    list-style: none;
+    .item {
+      float: left;
+      line-height: 48px;
+      padding: 0 20px;
+      border-left: 1px solid #eee;
+      cursor: pointer;
+      -webkit-transition: all .2s ease-in;
+      -moz-transition: all .2s ease-in;
+      -o-transition: all .2s ease-in;
+      .name {
+        font-size: 1.2em;
+        font-weight: 500;
+      }
+      i {
+        padding-right: 10px;
+      }
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}

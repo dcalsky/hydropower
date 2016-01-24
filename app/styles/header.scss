@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+  height: 68px;
+  margin: 0;
+  background: #22222c;
+  .logo {
+    padding: 10px 0;
+    background: #1967d2;
+    color: #fff6de;
+  }
+  .items {
+    .item {
+      padding: 10px 20px;
+      border: 0 none;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -o-transition: none;
+      color: #fff;
+      font-size: 1.2em;
+      font-weight: 500;
+      &:hover {
+        background: #333;
+      }
+    }
+    .active {
+      background: #333;
+    }
+  }
+}

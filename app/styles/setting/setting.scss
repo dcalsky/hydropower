@@ -1,0 +1,15 @@
+.setting-base, .setting-safety, .setting-station {
+  display: block;
+  padding: 20px;
+  .form {
+    margin: 0 80px;
+    .submit {
+      border-top: 1px solid #ccc;
+      padding-top: 30px;
+      margin-top: 30px;
+      button {
+        width: 200px;
+      }
+    }
+  }
+}
