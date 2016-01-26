@@ -16,7 +16,6 @@ const SubNav = React.createClass({
                 <ul className="options">
                 {
                     this.props.options.map((option)=>{
-                        console.log(this.props);
                         return(
                             <li className={cx("option", {active: this.props.active == option.route})} onClick={this.handleTransition.bind(this, option.route)}>{option.name}</li>
                         );
@@ -27,4 +26,5 @@ const SubNav = React.createClass({
         );
     }
 });
+
 export default SubNav;

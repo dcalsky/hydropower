@@ -43,7 +43,6 @@ const Container = React.createClass({
         });
     },
     render(){
-        console.log(this.props)
         return(
             <div className="container">
                 <Navbar className="header" name={this.state.name} history={this.props.history} items={this.state.items} logo="HYDROPOWER" />

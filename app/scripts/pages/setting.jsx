@@ -16,7 +16,6 @@ const Setting = React.createClass({
         this.setState({
             title: "配置管理",
             intro: "基础、站点、安全设置等",
-            active: "/base",
             options: [
                 {
                     name: "基本信息",
